@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosso Reencontro 💖</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-image: url('https://i.pinimg.com/originals/5f/1e/bf/5f1ebf8f7e0f52e6c81f255f20278ae2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+    h1 {
+      color: #d63384;
+      font-size: 26px;
+      margin-top: 300px;
+    }
+    .btn {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #yes {
+      background-color: #ff69b4;
+      color: white;
+    }
+    #no {
+      background-color: #ccc;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Giovana, você é como doce de leite: irresistível, grudou na minha memória e no meu coração... Que tal a gente transformar esse reencontro em um acidente de sem querer minha boca encontrar a sua?</h1>
+  <button class="btn" id="yes">Topo!</button>
+  <button class="btn" id="no">Nem pensar!</button>
+
+  <script>
+    const yesBtn = document.getElementById('yes');
+    const noBtn = document.getElementById('no');
+
+    yesBtn.addEventListener('click', () => {
+      alert('Perfeito! Então... quer sair comigo na sexta-feira à noite? 🥰');
+      window.location.href = 'https://wa.me/43991604079';
+    });
+
+    noBtn.addEventListener('mouseover', () => {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 40);
+      noBtn.style.left = x + 'px';
+      noBtn.style.top = y + 'px';
+    });
+  </script>
+</body>
+</html>
