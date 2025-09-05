@@ -3,7 +3,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Nosso Reencontro 💖</title>
+  <title>Afterzin 💋</title>
   <style>
     body {
       background-color: #ffe6f0;
@@ -14,6 +14,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center top;
+      position: relative;
     }
     h1 {
       color: #d63384;
@@ -28,6 +29,10 @@
       border-radius: 10px;
       cursor: pointer;
       transition: 0.3s;
+      position: relative;
+      white-space: normal;
+      word-wrap: break-word;
+      max-width: 250px;
     }
     #yes {
       background-color: #ff69b4;
@@ -36,20 +41,20 @@
     #no {
       background-color: #ccc;
       position: absolute;
+      transition: left 0.2s, top 0.2s;
     }
   </style>
 </head>
 <body>
-  <h1>Giovana, você é como doce de leite: irresistível, grudou na minha memória e no meu coração... Que tal a gente transformar esse reencontro em um acidente de sem querer minha boca encontrar a sua?</h1>
-  <button class="btn" id="yes">Topo!</button>
-  <button class="btn" id="no">Nem pensar!</button>
+  <h1>Nick, será que você toparia um encontro horrível comigo?</h1>
+  <button class="btn" id="yes">Não tenho nada melhor pra fazer<br>então vamos</button>
+  <button class="btn" id="no">Não</button>
 
   <script>
     const yesBtn = document.getElementById('yes');
     const noBtn = document.getElementById('no');
 
     yesBtn.addEventListener('click', () => {
-      alert('Perfeito! Então... quer sair comigo na sexta-feira à noite? 🥰');
       window.location.href = 'https://wa.me/43991604079';
     });
 
